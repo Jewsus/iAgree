@@ -9,7 +9,7 @@ namespace iAgree
     {
         public static string SavePath = Path.Combine(TShock.SavePath, "iAgree.json");
 
-        public string AgreeMessage = "Congratu-fucking-lation you have just managed to read the fucking rules you little shit.";
+        public string AgreeMessage = "Congratulations you have just managed to read the rules!";
 
 
         public void Save()
