@@ -55,7 +55,7 @@ namespace iAgree
             ServerApi.Hooks.ServerChat.Register(this, OnChat);
             ServerApi.Hooks.ServerLeave.Register(this, OnLeave);
             Commands.ChatCommands.Add(new Command(Agree, "iagree"));
-            Commands.ChatCommands.Add(new Command("jewplug.helpme", new CommandDelegate(HelpMe), new string[]
+            Commands.ChatCommands.Add(new Command("iagree.helpme", new CommandDelegate(HelpMe), new string[]
                 {
                 "helpme"
                  }));
@@ -97,7 +97,7 @@ namespace iAgree
                     tSPlayer.SendErrorMessage("Please follow the instructions on the sign on how to register & log in!");
                     tSPlayer.SendErrorMessage("Trouble finding the sign/too lazy to read? Short instructions: /helpme");
                 }
-                else if (!tSPlayer.Group.HasPermission("jewplug.bypass.chat") && e.Text.Length >= 10)
+                else if (!tSPlayer.Group.HasPermission("iagree.bypass.chat") && e.Text.Length >= 10)
                 {
                     int num = 0;
                     char[] array = e.Text.ToCharArray();
